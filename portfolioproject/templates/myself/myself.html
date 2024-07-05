@@ -1,33 +1,50 @@
-{% extends "common_code/base.html" %}
-{% block title %} My Self {% endblock title%}
-{% block content %}
-{% load static %}
+{% extends "common_code/base.html" %} {% block title %} My Self {% endblock title%} {% block content %} {% load static%}
 
-<section class="text-gray-600 body-font bg-slate-100">
-  <div class="container mx-auto flex px-5 pt-24 md:flex-row flex-col items-center">
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 pt-24 md:flex-row flex-col items-center lg:pb-10 lg:w-5/6 lg:pt-36">
     <div
-      class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">About My Self
-      </h1>
-      <p class="mb-8 leading-relaxed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita hic similique
-        ut minus ad, maxime recusandae aspernatur magnam odio excepturi voluptatibus ipsum et explicabo quae, labore
-        quis iure reiciendis soluta incidunt repellat ipsam nihil totam! Alias, soluta rerum. Sit, optio harum suscipit
-        expedita nihil inventore excepturi, ducimus laborum, doloremque vitae reiciendis quam veritatis ut iste
-        exercitationem provident repudiandae maxime fugiat! Voluptatibus, exercitationem officia hic fugit dolores
-        suscipit minima numquam dolorum amet? Nisi aut unde deserunt a molestias eveniet perspiciatis! Ab.</p>
-      <div class="flex w-full md:justify-start justify-center items-end">
+      class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-8 md:mb-0 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">About My Self</h1>
+
+      <div id="mysection" class="break-words">
+        <div class="article">
+          <p class="leading-relaxed">
+            As a Computer Science and Engineering (CSE) student, I am deeply immersed in the world of technology and
+            innovation. My studies encompass a broad spectrum of subjects, from programming languages and algorithms to
+            computer architecture and software engineering. I am passionate about solving complex problems and creating
+            efficient, scalable solutions.
+          </p>
+          <p class="moretext hidden">
+            My coursework has provided me with a solid foundation in both theoretical concepts and practical
+            applications,
+            preparing me for a dynamic career in the tech industry. I am eager to leverage my skills and knowledge to
+            contribute to cutting-edge projects and advancements in the field of computer science. Whether it's
+            developing
+            software, designing systems, or exploring new technologies, I am committed to continuous learning and
+            professional growth in this ever-evolving domain.
+          </p>
+        </div>
+        <a class="moreless-button text-cyan-600 font-bold" href="#">Read more</a>
+      </div>
+
+      <div class="flex w-full md:justify-start justify-center items-end mt-12">
         <button
-          class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Learn
-          More</button>
+          class="inline-flex text-white bg-slate-900 border-0 py-2 px-6 focus:outline-none hover:bg-slate-700 rounded text-lg">
+          Contact Me
+        </button>
       </div>
     </div>
-    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-      <img class="object-cover object-center rounded" alt="hero" src=" {% static 'images/profile/myself1.jpg' %} ">
+    <div class="lg:max-w-lg lg:w-2/5 md:w-1/2 w-5/6 mb-6 lg:mb-0 md:mb-0">
+      <img class="object-cover object-center rounded" alt="hero" src=" {% static 'images/profile/myself1.jpg' %} " />
     </div>
   </div>
 </section>
 
 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="{% static 'js/readmore.js' %}"></script>
 
 
 {% endblock content%}
