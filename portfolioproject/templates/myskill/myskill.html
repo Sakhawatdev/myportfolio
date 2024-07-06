@@ -1,36 +1,131 @@
 {% extends "common_code/base.html" %} {% block title %} My Skill {%endblock title%} {%block content%} {%load static%}
 <!-- new design start -->
 <section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-wrap -m-4">
-      <div class="p-2 lg:w-1/4">
+  <div class="container px-5 py-24 mx-auto lg:w-5/6">
+
+    <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">My Skills</h1>
+      <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
+        Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
+      </p>
+    </div>
+    <div class="flex flex-wrap -m-4 justify-center">
+      <div class="p-2 lg:w-1/5 ">
         <div
-          class="text-center border-sky-200 border p-8 hover:shadow-md transform hover:scale-110 transition-transform duration-500 ">
-          <img src="{% static 'images/logo/html5.png' %}" alt="html5">
-          <h2>HTML</h2>
+          class=" border-sky-200 border p-8 hover:shadow-md transform hover:scale-110 transition-transform duration-500 grid justify-center ">
+          <img src="{% static 'images/logo/html5.png' %}" class="" alt="html5">
+          <h2 class="text-center">HTML</h2>
         </div>
       </div>
-      <div class="p-2 lg:w-1/4">
+      <div class="p-2 lg:w-1/5">
         <div
-          class="text-center border-sky-200 border p-8 hover:shadow-md transform hover:scale-110 transition-transform duration-500 ">
-          <img src="{% static 'images/logo/html5.png' %}" alt="html5">
-          <h2>HTML</h2>
+          class=" border-sky-200 border p-8 hover:shadow-md transform hover:scale-110 transition-transform duration-500 grid justify-center ">
+          <img src="{% static 'images/logo/css-3.png' %}" class="" alt="css">
+          <h2 class="text-center text-sm">CSS</h2>
         </div>
       </div>
-      <div class="p-2 lg:w-1/4">
+      <div class="p-2 lg:w-1/5 ">
         <div
-          class="text-center border-sky-200 border p-8 hover:shadow-md transform hover:scale-110 transition-transform duration-500 ">
-          <img src="{% static 'images/logo/html5.png' %}" alt="html5">
-          <h2>HTML</h2>
+          class=" border-sky-200 border p-8 hover:shadow-md transform hover:scale-110 transition-transform duration-500 grid justify-center ">
+          <img src="{% static 'images/logo/js.png' %}" class="" alt="html5">
+          <h2 class="text-center text-sm">JS</h2>
         </div>
       </div>
-      <div class="p-2 lg:w-1/4">
+      <div class="p-2 lg:w-1/5">
         <div
-          class="text-center border-sky-200 border p-8 hover:shadow-md transform hover:scale-110 transition-transform duration-500 ">
-          <img src="{% static 'images/logo/html5.png' %}" alt="html5">
-          <h2>HTML</h2>
+          class=" border-sky-200 border p-8 hover:shadow-md transform hover:scale-110 transition-transform duration-500 grid justify-center ">
+          <img src="{% static 'images/logo/react.png' %}" class="" alt="html5">
+          <h2 class="text-center text-sm">React</h2>
         </div>
       </div>
+      <div class="p-2 lg:w-1/5">
+        <div
+          class=" border-sky-200 border p-8 hover:shadow-md transform hover:scale-110 transition-transform duration-500 grid justify-center ">
+          <img src="{% static 'images/logo/c.png' %}" class="" alt="html5">
+          <h2 class="text-center text-sm">C</h2>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/5">
+        <div
+          class=" border-sky-200 border p-8 hover:shadow-md transform hover:scale-110 transition-transform duration-500 grid justify-center ">
+          <img src="{% static 'images/logo/python.png' %}" class="" alt="html5">
+          <h2 class="text-center text-sm">Python</h2>
+        </div>
+      </div>
+
+      <div class="p-2 lg:w-1/5">
+        <div
+          class=" border-sky-200 border p-8 hover:shadow-md transform hover:scale-110 transition-transform duration-500 grid justify-center ">
+          <img src="{% static 'images/logo/django.png' %}" class="" alt="html5">
+          <h2 class="text-center text-sm">Django</h2>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/5">
+        <div
+          class=" border-sky-200 border p-8 hover:shadow-md transform hover:scale-110 transition-transform duration-500 grid justify-center ">
+          <img src="{% static 'images/logo/figma.png' %}" class="" alt="html5">
+          <h2 class="text-center text-sm">Figma</h2>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/5">
+        <div
+          class=" border-sky-200 border p-8 hover:shadow-md transform hover:scale-110 transition-transform duration-500 grid justify-center ">
+          <img src="{% static 'images/logo/github.png' %}" class="" alt="html5">
+          <h2 class="text-center text-sm">Github</h2>
+        </div>
+      </div>
+
+      <div class="p-2 lg:w-1/5">
+        <div
+          class=" border-sky-200 border p-8 hover:shadow-md transform hover:scale-110 transition-transform duration-500 grid justify-center ">
+          <img src="{% static 'images/logo/java.png' %}" class="" alt="html5">
+          <h2 class="text-center text-sm">Java</h2>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/5">
+        <div
+          class=" border-sky-200 border p-8 hover:shadow-md transform hover:scale-110 transition-transform duration-500 grid justify-center ">
+          <img src="{% static 'images/logo/mysql.png' %}" class="" alt="html5">
+          <h2 class="text-center text-sm">Mysql</h2>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/5">
+        <div
+          class=" border-sky-200 border p-8 hover:shadow-md transform hover:scale-110 transition-transform duration-500 grid justify-center ">
+          <img src="{% static 'images/logo/sqlite.png' %}" class="" alt="html5">
+          <h2 class="text-center text-sm">SQlite</h2>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/5">
+        <div
+          class=" border-sky-200 border p-8 hover:shadow-md transform hover:scale-110 transition-transform duration-500 grid justify-center ">
+          <img src="{% static 'images/logo/tailwind.png' %}" class="" alt="html5">
+          <h2 class="text-center text-sm">Tailwind</h2>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/5">
+        <div
+          class=" border-sky-200 border p-8 hover:shadow-md transform hover:scale-110 transition-transform duration-500 grid justify-center ">
+          <img src="{% static 'images/logo/bootstrap.png' %}" class="" alt="Bootstrap">
+          <h2 class="text-center text-sm">Bootstrap</h2>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/5">
+        <div
+          class=" border-sky-200 border p-8 hover:shadow-md transform hover:scale-110 transition-transform duration-500 grid justify-center ">
+          <img src="{% static 'images/logo/illustrator.png' %}" class="" alt="html5">
+          <h2 class="text-center text-sm">Illustrator</h2>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/5">
+        <div
+          class=" border-sky-200 border p-8 hover:shadow-md transform hover:scale-110 transition-transform duration-500 grid justify-center ">
+          <img src="{% static 'images/logo/photoshop.png' %}" class="" alt="html5">
+          <h2 class="text-center text-sm">Photoshop</h2>
+        </div>
+      </div>
+
+
     </div>
   </div>
 </section>
@@ -38,7 +133,7 @@
 
 
 <!-- old design start -->
-<section class="text-gray-600 body-font">
+<!-- <section class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto flex flex-wrap">
     <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center">
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">My Skills</h1>
@@ -154,6 +249,6 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 {%endblock content%}
