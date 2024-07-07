@@ -1,16 +1,27 @@
 {% extends "common_code/base.html" %} {% block title %} Home {%endblock title%} {%block content%} {% load static%}
 
+<link rel="stylesheet" type="text/css" href="{% static 'css/typewrite.css' %}">
+
+
 <!-- new design code start -->
 <section class="text-gray-600 body-font">
   <div class="container mx-auto flex px-5 lg:py-24 pt-24 md:flex-row items-center flex-col-reverse lg:w-5/6 lg:pt-36">
     <div
       class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
       <h1 class="title-font sm:text-4xl text-3xl mb-2 font-medium text-gray-900">Sakhawat Hossain</h1>
-      <h3 class="text-cyan-600 mb-4">Software Engineer</h3>
-      <p class="mb-8 leading-relaxed">
+      <!-- <h3 class="text-cyan-600 mb-4">Software Engineer</h3> -->
+
+      <div class="wrapper">
+        <div class="centeredBox">
+          <span class="text-teal-500" id="typewriter" data-array=""></span>
+          <span class="cursor"></span>
+        </div>
+      </div>
+
+      <p class="mb-8 leading-relaxed text-xl">
         Aspiring Software Developer with a strong foundation in programming languages, algorithms, and data structures,
         seeking to leverage my skills in a dynamic software development role. Committed to continuous learning and
-        passionate about building innovative and efficient software solutions
+        passionate about building innovative and efficient software solutions.
       </p>
       <div class="justify-center">
         <a href="https://github.com/Sakhawatdev" target="_blank"
@@ -30,7 +41,7 @@
             <circle cx="4" cy="4" r="2" stroke="none"></circle>
           </svg>Linkedin
         </a>
-        <a href="#"
+        <a href="mailto:web.sakhawat.dev40@gmail.com"
           class="inline-flex text-white bg-slate-900 border-0 py-2 px-4 focus:outline-none hover:bg-slate-700 rounded text-lg items-center mb-1">
           <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5 pr-1" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -143,6 +154,11 @@
 </div>
 </div>
 </section> -->
+
+
+
+<script src="{% static 'js/typewriter.js' %}"></script>
+
 
 {%endblock %} {% block footer %}
 <!-- <p>&copy; 2024 My Django Site. All rights reserved.</p> -->
